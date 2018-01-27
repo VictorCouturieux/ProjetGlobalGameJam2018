@@ -7,11 +7,13 @@ public class Transmission : MonoBehaviour {
 //	private Vector3 _initialPossition;
 	private int _posAlleaRottateZ;
 	private Quaternion _quaternion;
+    private GameManager GM_;
 	
 	// Use this for initialization
 	void Start ()
 	{
-//		_initialPossition = transform.position;
+        //		_initialPossition = transform.position;
+        GM_ = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -36,5 +38,6 @@ public class Transmission : MonoBehaviour {
 		print("An objet collided");
 //		transform.position = _initialPossition;
         Destroy(this.gameObject);
+        GM_.addScore();
     }
 }
