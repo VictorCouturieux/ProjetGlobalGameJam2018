@@ -5,32 +5,42 @@ using UnityEngine;
 
 public class animSatelite : MonoBehaviour
 {
-	private float RotateSpeed = 1f;
-	private float Radius = 3.0f;
-
+	private const float Min = 10f;
+	private const float Max = 100f;
+	
+	private float rotationSpeed = 75;
+	
 	private Vector2 _centre;
-	private float _angle;
-
-	Quaternion rotation = new Quaternion();
-
+	
 	private void Start() {
-		_centre = transform.position;
+		_centre = new Vector3(0, 0, 1);
 	}
 
-	private void Update() {
-		_angle += RotateSpeed * Time.deltaTime;
+	
+	private void Update()
+	{
 
-		var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
 		
-		transform.position = _centre + offset;
-
-		if (transform.rotation.eulerAngles.z <= -29 && transform.rotation.eulerAngles.z >= -31)
+		
+		if (Input.GetKey("up"))
 		{
-			print("reposition");
+			rotationSpeed++;
+			if (rotationSpeed > Max)
+			{
+				rotationSpeed = Max;
+			}
+		}
+		if (Input.GetKey("down"))
+		{
+			rotationSpeed--;
+			if (rotationSpeed < Min)
+			{
+				rotationSpeed = Min;
+			}
 		}
 		
-		transform.Rotate(rotation.eulerAngles = new Vector3(0, 0, -1f));
+		transform.RotateAround(_centre, Vector3.back, rotationSpeed * Time.deltaTime);
 		
-		print(transform.rotation.eulerAngles.z);
+		print(rotationSpeed);
 	}
 }
