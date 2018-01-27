@@ -23,10 +23,10 @@ public class Transmission : MonoBehaviour {
 //		      + "/ 8"
 //		      + "\nposition initiale :" + _initialPossition);
 		
-		if ( Math.Sqrt( Math.Pow(transform.position.x , 2) + Math.Pow(transform.position.y , 2)) >= 8)
+		if ( Math.Sqrt( Math.Pow(transform.position.x , 2) + Math.Pow(transform.position.y , 2)) >= 10)
 		{
 //			transform.position = _initialPossition;
-			Destroy(this);
+			Destroy(this.gameObject);
 		}
 		
 	}

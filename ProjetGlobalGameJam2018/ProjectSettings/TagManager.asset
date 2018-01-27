@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ciel
+    uniqueID: 3812817297
+    locked: 0
+  - name: Terre
+    uniqueID: 4222605863
+    locked: 0
+  - name: Sattelites
+    uniqueID: 1822635361
+    locked: 0
