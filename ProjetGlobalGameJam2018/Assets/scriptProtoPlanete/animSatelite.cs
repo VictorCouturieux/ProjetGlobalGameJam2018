@@ -8,10 +8,10 @@ public class animSatelite : MonoBehaviour
 	private const float Min = 10f;
 	private const float Max = 100f;
 	
-	private float rotationSpeed = 75;
+	private float _rotationSpeed = 50;
 	
 	private Vector2 _centre;
-	
+
 	private void Start() {
 		_centre = new Vector3(0, 0, 1);
 	}
@@ -20,27 +20,27 @@ public class animSatelite : MonoBehaviour
 	private void Update()
 	{
 
-		
-		
 		if (Input.GetKey("up"))
 		{
-			rotationSpeed++;
-			if (rotationSpeed > Max)
+			_rotationSpeed++;
+			if (_rotationSpeed > Max)
 			{
-				rotationSpeed = Max;
+				_rotationSpeed = Max;
 			}
 		}
 		if (Input.GetKey("down"))
 		{
-			rotationSpeed--;
-			if (rotationSpeed < Min)
+			_rotationSpeed--;
+			if (_rotationSpeed < Min)
 			{
-				rotationSpeed = Min;
+				_rotationSpeed = Min;
 			}
 		}
 		
-		transform.RotateAround(_centre, Vector3.back, rotationSpeed * Time.deltaTime);
+		transform.RotateAround(_centre, Vector3.back, _rotationSpeed * Time.deltaTime);
 		
-		print(rotationSpeed);
+//		print(rotationSpeed);
 	}
+
+	
 }
