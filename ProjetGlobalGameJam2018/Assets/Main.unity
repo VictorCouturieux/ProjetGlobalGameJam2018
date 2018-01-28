@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 557730539}
   - component: {fileID: 557730540}
   m_Layer: 0
-  m_Name: Satelite
+  m_Name: Satelite_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,7 +581,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825733031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.06}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -654,7 +654,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 971792770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1818335966}
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 1169747351}
   - component: {fileID: 1169747350}
   m_Layer: 0
-  m_Name: Satelite (2)
+  m_Name: Satelite_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -959,7 +959,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4285814736414466, guid: d66754b257c8f1e4585f61a12c7b46ed, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.03
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4285814736414466, guid: d66754b257c8f1e4585f61a12c7b46ed, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1387,7 +1387,7 @@ GameObject:
   - component: {fileID: 1802793039}
   - component: {fileID: 1802793038}
   m_Layer: 0
-  m_Name: Satelite (1)
+  m_Name: Satelite_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 2117646480}
   - component: {fileID: 2117646479}
   m_Layer: 0
-  m_Name: Satelite (3)
+  m_Name: Satelite_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
