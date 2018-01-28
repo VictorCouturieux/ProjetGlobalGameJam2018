@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Text ScoreText;
     public Text MsgFailText;
     public Text ChaosLvlText;
+    public Text GameOverScoreText;
 
     public List<GameObject> ListSatelite;
 	public List<GameObject> ListCercleSatelite;
@@ -54,15 +55,20 @@ public class GameManager : MonoBehaviour
         InvokeRepeating("SpawnRandom", 2.0f, 3f);
     }
 	
+    public void ResetSatellite() {
+        ListCercleSatelite[0].GetComponent<SpriteRenderer>().color = _colorNoLight;
+        ListCercleSatelite[1].GetComponent<SpriteRenderer>().color = _colorNoLight;
+        ListCercleSatelite[2].GetComponent<SpriteRenderer>().color = _colorNoLight;
+        ListCercleSatelite[3].GetComponent<SpriteRenderer>().color = _colorNoLight;
+    }
+
 	public void SelectSatellite()
 	{
-		
-		ListCercleSatelite[0].GetComponent<SpriteRenderer>().color = _colorNoLight;
-		ListCercleSatelite[1].GetComponent<SpriteRenderer>().color = _colorNoLight;
-		ListCercleSatelite[2].GetComponent<SpriteRenderer>().color = _colorNoLight;
-		ListCercleSatelite[3].GetComponent<SpriteRenderer>().color = _colorNoLight;
-		
-		if (Input.GetKey(KeyCode.Alpha1) || _pushKey == 1) 
+
+        ResetSatellite();
+
+
+        if (Input.GetKey(KeyCode.Alpha1) || _pushKey == 1) 
 		{
 			_pushKey = 1;
 			ListSatelite[_pushKey-1].GetComponent<AnimSatelite>().RotationSpeed();
@@ -120,12 +126,17 @@ public class GameManager : MonoBehaviour
     }
 
     public void lossScore() {
-        chaosLvl += 5;
+        chaosLvl += 15;
         ChaosLvlText.text = "CHAOS " + chaosLvl + "%";
         addMsgFailed();
 
-        if (chaosLvl == 100) {
+        if (chaosLvl >= 100) {
             GameIsOn = false;
+            CancelInvoke();
+            ResetSatellite();
+            PanelsManager.HideSatellites();
+            PanelsManager.ShowLogoGGJ();
+            GameOverScoreText.text = "You scored " + score + " points !";
             PanelsManager.ShowGameOverPanel();
         }
         //TODO: Add ShowMsgSound Here (Loss)
@@ -137,6 +148,14 @@ public class GameManager : MonoBehaviour
 
     public void ActiveTutorial() {
         TutorialIsOn = !TutorialIsOn;
+    }
+
+    public void ResetGame() {
+        score = 0;
+        chaosLvl = 0;
+        ChaosLvlText.text = "CHAOS " + chaosLvl + "%";
+        ScoreText.text = "SCORE " + score;
+        PanelsManager.ShowSatellites();
     }
 }
 

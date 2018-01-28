@@ -1,9 +1,57 @@
 fileFormatVersion: 2
 guid: a5bf9589f52b5b6429ca39034e9d7e5e
-timeCreated: 1517149512
+timeCreated: 1517150016
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ondes_0
+    21300002: ondes_1
+    21300004: ondes_2
+    21300006: ondes_3
+    21300008: ondes_4
+    21300010: ondes_5
+    21300012: ondes_6
+    21300014: ondes_7
+    21300016: ondes_8
+    21300018: ondes_9
+    21300020: ondes_10
+    21300022: ondes_11
+    21300024: ondes_12
+    21300026: ondes_13
+    21300028: ondes_14
+    21300030: ondes_15
+    21300032: ondes_16
+    21300034: ondes_17
+    21300036: ondes_18
+    21300038: ondes_19
+    21300040: ondes_20
+    21300042: ondes_21
+    21300044: ondes_22
+    21300046: ondes_23
+    21300048: ondes_24
+    21300050: ondes_25
+    21300052: ondes_26
+    21300054: ondes_27
+    21300056: ondes_28
+    21300058: ondes_29
+    21300060: ondes_30
+    21300062: ondes_31
+    21300064: ondes_32
+    21300066: ondes_33
+    21300068: ondes_34
+    21300070: ondes_35
+    21300072: ondes_36
+    21300074: ondes_37
+    21300076: ondes_38
+    21300078: ondes_39
+    21300080: ondes_40
+    21300082: ondes_41
+    21300084: ondes_42
+    21300086: ondes_43
+    21300088: ondes_44
+    21300090: ondes_45
+    21300092: ondes_46
+    21300094: ondes_47
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,13 +88,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 350
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -66,9 +114,711 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ondes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 632
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 632
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_2
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 632
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 632
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_4
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 632
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_5
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 632
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 542
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 542
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_8
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 542
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_9
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 542
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_10
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 542
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_11
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 542
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 452
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_14
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 452
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_15
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 452
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_16
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 452
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_17
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 452
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_19
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 362
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_20
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 362
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_21
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 362
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_22
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 362
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_23
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 362
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_25
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 272
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_26
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 272
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_27
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 272
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_28
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 272
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_29
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 272
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_31
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 182
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_32
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 182
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_33
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 182
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_34
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 182
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_35
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 182
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_37
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 92
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_38
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 92
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_39
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 92
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_40
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 92
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_41
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 92
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_43
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 2
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_44
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_45
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 2
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_46
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ondes_47
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2
+        width: 330
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

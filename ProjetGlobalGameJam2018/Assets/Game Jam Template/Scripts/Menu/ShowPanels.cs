@@ -12,6 +12,8 @@ public class ShowPanels : MonoBehaviour {
     public GameObject helpPanel;
     public GameObject gameOverPanel;
     public GameObject creditsPanel;
+    public GameObject satellites;
+    public GameObject logoGlobalGameJam;
 
     private GameObject activePanel;                         
     private MenuObject activePanelMenuObject;
@@ -108,16 +110,12 @@ public class ShowPanels : MonoBehaviour {
     //Call this function to deactivate and hide the Pause panel during game play
     public void HideGameOverPanel() {
         gameOverPanel.SetActive(false);
-        // Reset le jeu ?
-        //optionsTint.SetActive(false);
-
+        menuPanel.SetActive(true);
     }
     //Call this function to deactivate and hide the Pause panel during game play
     public void ShowGameOverPanel() {
         gameOverPanel.SetActive(true);
         gameUIPanel.SetActive(false);
-        //optionsTint.SetActive(false);
-
     }
 
     //Call this function to deactivate and hide the Pause panel during game play
@@ -132,4 +130,21 @@ public class ShowPanels : MonoBehaviour {
         menuPanel.SetActive(false);
 
     }
+
+    public void HideSatellites() {
+        satellites.SetActive(false);
+
+    }
+    public void ShowSatellites() {
+        satellites.SetActive(true);
+    }
+
+    public void HideLogoGGJ() {
+        logoGlobalGameJam.SetActive(false);
+
+    }
+    public void ShowLogoGGJ() {
+        logoGlobalGameJam.SetActive(true);
+    }
+    
 }
