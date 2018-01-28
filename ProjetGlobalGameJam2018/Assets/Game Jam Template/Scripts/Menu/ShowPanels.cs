@@ -10,6 +10,8 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject pausePanel;                           //Store a reference to the Game Object PausePanel
     public GameObject gameUIPanel;
     public GameObject helpPanel;
+    public GameObject gameOverPanel;
+    public GameObject creditsPanel;
 
     private GameObject activePanel;                         
     private MenuObject activePanelMenuObject;
@@ -100,6 +102,34 @@ public class ShowPanels : MonoBehaviour {
 		pausePanel.SetActive (false);
         gameUIPanel.SetActive(true);
         //optionsTint.SetActive(false);
+
+    }
+
+    //Call this function to deactivate and hide the Pause panel during game play
+    public void HideGameOverPanel() {
+        gameOverPanel.SetActive(false);
+        // Reset le jeu ?
+        //optionsTint.SetActive(false);
+
+    }
+    //Call this function to deactivate and hide the Pause panel during game play
+    public void ShowGameOverPanel() {
+        gameOverPanel.SetActive(true);
+        gameUIPanel.SetActive(false);
+        //optionsTint.SetActive(false);
+
+    }
+
+    //Call this function to deactivate and hide the Pause panel during game play
+    public void HideCreditsPanel() {
+        creditsPanel.SetActive(false);
+        menuPanel.SetActive(true);
+
+    }
+    //Call this function to deactivate and hide the Pause panel during game play
+    public void ShowCreditsPanel() {
+        creditsPanel.SetActive(true);
+        menuPanel.SetActive(false);
 
     }
 }

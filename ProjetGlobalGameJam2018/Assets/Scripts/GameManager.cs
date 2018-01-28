@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 	public GameObject Transmission;
-    public int score;
+    public int score = 0;
+    public int chaosLvl = 0;
     float tempo;
     public Text ScoreText;
     public Text MsgFailText;
+    public Text ChaosLvlText;
 
     public List<GameObject> ListSatelite;
 	public List<GameObject> ListCercleSatelite;
@@ -18,15 +20,19 @@ public class GameManager : MonoBehaviour
     public string[] MsgFail;
 
     public bool GameIsOn;
+    public bool TutorialIsOn = false;
 
-	private Color _colorLight;
+    private Color _colorLight;
 	private Color _colorNoLight;
 
 	private int _pushKey ;
-	
-	// Use this for initialization
-	void Start () {
+
+    public ShowPanels PanelsManager;
+
+    // Use this for initialization
+    void Start () {
         MsgFailText.text = "";
+        ChaosLvlText.text = "CHAOS 0%";
         _pushKey = 1;
 
         _colorLight = new Color( 1, 1, 1, 1);
@@ -35,7 +41,7 @@ public class GameManager : MonoBehaviour
 
 	// Update is called once per frame
 	void Update () {
-        if (GameIsOn) {
+        if (GameIsOn || TutorialIsOn) {
             SelectSatellite();
         }
 
@@ -102,18 +108,35 @@ public class GameManager : MonoBehaviour
     public void addScore() {
         score++;
         ScoreText.text = "SCORE " + score;
+
+        chaosLvl--;
+
+        if (chaosLvl < 0) {
+            chaosLvl = 0;
+        }
+
+        ChaosLvlText.text = "CHAOS " + chaosLvl + "%";
         //TODO: Add CatchSound here
     }
 
     public void lossScore() {
-        score--;
-        ScoreText.text = "SCORE " + score;
+        chaosLvl += 5;
+        ChaosLvlText.text = "CHAOS " + chaosLvl + "%";
         addMsgFailed();
+
+        if (chaosLvl == 100) {
+            GameIsOn = false;
+            PanelsManager.ShowGameOverPanel();
+        }
         //TODO: Add ShowMsgSound Here (Loss)
     }
 
     public void addMsgFailed() {
         MsgFailText.text = "- " + MsgFail[Random.Range(0, MsgFail.Length)] + "\n\n" + MsgFailText.text;
+    }
+
+    public void ActiveTutorial() {
+        TutorialIsOn = !TutorialIsOn;
     }
 }
 
