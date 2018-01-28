@@ -94,7 +94,8 @@ public class ShowPanels : MonoBehaviour {
         print("Pause Panel");
         gameUIPanel.SetActive(false);
         pausePanel.SetActive (true);
-		//optionsTint.SetActive(true);
+        GM_.GameIsOn = false;
+        //optionsTint.SetActive(true);
         SetSelection(pausePanel);
     }
 
@@ -102,6 +103,7 @@ public class ShowPanels : MonoBehaviour {
 	public void HidePausePanel()
 	{
 		pausePanel.SetActive (false);
+        GM_.GameIsOn = true;
         gameUIPanel.SetActive(true);
         //optionsTint.SetActive(false);
 
