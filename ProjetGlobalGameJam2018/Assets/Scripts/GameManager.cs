@@ -156,6 +156,7 @@ public class GameManager : MonoBehaviour
         ChaosLvlText.text = "CHAOS " + chaosLvl + "%";
         ScoreText.text = "SCORE " + score;
         PanelsManager.ShowSatellites();
+        MsgFailText.text = "";
     }
 }
 

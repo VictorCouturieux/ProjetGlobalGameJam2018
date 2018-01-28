@@ -4441,8 +4441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSettings: {fileID: 11400000, guid: f0eb3fc789dd1a341a1d1f2bda70c1f6, type: 2}
-  titleMusic: {fileID: 8300000, guid: 7db0c87ec4fdb0e48af04349c4f14df9, type: 3}
-  mainMusic: {fileID: 8300000, guid: 7db0c87ec4fdb0e48af04349c4f14df9, type: 3}
+  titleMusic: {fileID: 8300000, guid: 08abfd351add29b42a8cb5c80f3fc233, type: 3}
+  mainMusic: {fileID: 8300000, guid: 08abfd351add29b42a8cb5c80f3fc233, type: 3}
   volumeDown: {fileID: 24519918, guid: 0ac7fb39e445048d89688f69c2a1839a, type: 2}
   volumeUp: {fileID: 24500003, guid: 0ac7fb39e445048d89688f69c2a1839a, type: 2}
 --- !u!82 &1005846545
@@ -8038,7 +8038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_SelectOnUp: {fileID: 1092485329}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
