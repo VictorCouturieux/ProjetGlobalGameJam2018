@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
 	public GameObject Transmission;
     public int score;
     float tempo;
-	
+    public Text ScoreText;
 	
 	public List<GameObject> ListSatelite;
 
@@ -75,11 +76,6 @@ public class GameManager : MonoBehaviour
 //			print(_pushKey);
 		}
 		
-//		print(ListSatelite[0].GetComponent<SpriteRenderer>().color);
-//		print(ListSatelite[1].GetComponent<SpriteRenderer>().color);
-//		print(ListSatelite[2].GetComponent<SpriteRenderer>().color);
-//		print(ListSatelite[3].GetComponent<SpriteRenderer>().color);
-		
 	}
 	
 	public void SpawnRandom() {
@@ -88,6 +84,7 @@ public class GameManager : MonoBehaviour
 
     public void addScore() {
         score++;
+        ScoreText.text = "SCORE " + score;
     }
 	
 }
