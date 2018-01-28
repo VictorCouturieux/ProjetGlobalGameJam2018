@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -173,20 +172,4 @@ public class GameManager : MonoBehaviour
 		Source.PlayOneShot(AudioMsgCapt,0.7F);
 	}
 	
-}
-
-[CustomEditor(typeof(GameManager))]
-public class GameManagerEditor : Editor {
-    public override void OnInspectorGUI() {
-        DrawDefaultInspector();
-
-        GameManager myScript = (GameManager)target;
-        if (GUILayout.Button("Instanciate !")) {
-            myScript.SpawnRandom();
-        }
-        GameManager mySecondScript = (GameManager)target;
-        if (GUILayout.Button("Bad Newzz !")) {
-            mySecondScript.addMsgFailed();
-        }
-    }
 }
