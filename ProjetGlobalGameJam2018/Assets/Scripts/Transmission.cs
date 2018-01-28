@@ -9,6 +9,7 @@ public class Transmission : MonoBehaviour {
 	private Quaternion _quaternion;
     private GameManager GM_;
 	
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -28,6 +29,7 @@ public class Transmission : MonoBehaviour {
 		if ( Math.Sqrt( Math.Pow(transform.position.x , 2) + Math.Pow(transform.position.y , 2)) >= 6)
 		{
 //			transform.position = _initialPossition;
+			GM_.PlayMsgNonCapt();
 			Destroy(this.gameObject);
             GM_.lossScore();
         }
@@ -37,6 +39,7 @@ public class Transmission : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		print("An objet collided");
+		GM_.PlayMsgCapt();
 //		transform.position = _initialPossition;
         Destroy(this.gameObject);
         GM_.addScore();

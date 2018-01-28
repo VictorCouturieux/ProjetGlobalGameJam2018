@@ -186,6 +186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c53c8593b5e844bb06f179864bfab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioMsgCapt: {fileID: 8300000, guid: f7058247d2393ca4eafc9c9eb143a9ae, type: 3}
+  AudioMsgNomCapt: {fileID: 8300000, guid: 7bf01b6cd45b93c49b6737d7a0797564, type: 3}
+  Source: {fileID: 0}
 --- !u!212 &212041309218094778
 SpriteRenderer:
   m_ObjectHideFlags: 1

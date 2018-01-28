@@ -29,6 +29,12 @@ public class GameManager : MonoBehaviour
 	private int _pushKey ;
 
     public ShowPanels PanelsManager;
+	
+	
+	public AudioClip AudioMsgCapt;
+	public AudioClip AudioMsgNonCapt;
+	
+	public AudioSource Source;
 
     // Use this for initialization
     void Start () {
@@ -158,6 +164,15 @@ public class GameManager : MonoBehaviour
         PanelsManager.ShowSatellites();
         MsgFailText.text = "";
     }
+	
+	public void PlayMsgNonCapt(){
+		Source.PlayOneShot(AudioMsgNonCapt,0.7F);
+	}
+	
+	public void PlayMsgCapt(){
+		Source.PlayOneShot(AudioMsgCapt,0.7F);
+	}
+	
 }
 
 [CustomEditor(typeof(GameManager))]

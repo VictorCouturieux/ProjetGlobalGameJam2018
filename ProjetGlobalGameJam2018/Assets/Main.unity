@@ -3292,6 +3292,9 @@ MonoBehaviour:
   GameIsOn: 0
   TutorialIsOn: 0
   PanelsManager: {fileID: 1005846543}
+  AudioMsgCapt: {fileID: 8300000, guid: f7058247d2393ca4eafc9c9eb143a9ae, type: 3}
+  AudioMsgNonCapt: {fileID: 8300000, guid: 7bf01b6cd45b93c49b6737d7a0797564, type: 3}
+  Source: {fileID: 1005846545}
 --- !u!4 &752032856
 Transform:
   m_ObjectHideFlags: 0
@@ -5662,6 +5665,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114691852009216828, guid: d66754b257c8f1e4585f61a12c7b46ed,
+        type: 2}
+      propertyPath: Source
+      value: 
+      objectReference: {fileID: 1005846545}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d66754b257c8f1e4585f61a12c7b46ed, type: 2}
   m_IsPrefabParent: 0
@@ -6570,6 +6578,7 @@ GameObject:
   - component: {fileID: 1502265418}
   - component: {fileID: 1502265417}
   - component: {fileID: 1502265416}
+  - component: {fileID: 1502265421}
   m_Layer: 5
   m_Name: GameOverPanel
   m_TagString: Untagged
@@ -6679,6 +6688,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502265414}
+--- !u!114 &1502265421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502265414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7570778b96789f34e81387f0341369f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioClip: {fileID: 8300000, guid: 85b35a64d2504424ebc51db1f60c7f12, type: 3}
+  Source: {fileID: 1005846545}
 --- !u!1 &1553212353
 GameObject:
   m_ObjectHideFlags: 0
