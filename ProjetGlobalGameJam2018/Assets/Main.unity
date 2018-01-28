@@ -3268,27 +3268,22 @@ MonoBehaviour:
   - {fileID: 259426749}
   - {fileID: 603889663}
   MsgFail:
-  - "\xC9meutes en France suite \xE0 la coupure de plus 30 shows t\xE9l\xE9vis\xE9s."
-  - "Les publicit\xE9s momentan\xE9ment absentes des programmes TV, pour le grand
-    plaisir des utilisateurs..."
-  - "Le Vatican persuad\xE9 d'une intervention divine concernant l'inaccessibilit\xE9
-    de la pornographie sur internet."
-  - "Les cartels de la drogue profitent de la d\xE9faillance des services de renseignements
-    pour \xE9tendre leur influence."
-  - "Un stagiaire d\xE9clenche par m\xE9garde une fausse alerte nucl\xE9aire en Russie."
-  - "Le Bangladesh enfin sur un pied d'\xE9galit\xE9 avec les pays d\xE9velopp\xE9s,
-    ceux-ci n'ayant plus acc\xE8s \xE0 internet."
-  - "Suite \xE0 l'absence de r\xE9ponse \xE0 ses menaces, la Cor\xE9e du Nord d\xE9ploie
-    ses ogives nucl\xE9aires."
-  - "Explosion du prix de la t\xE9l\xE9phonie mobile en Ukraine."
-  - "Sans Wikip\xE9dia, des millions d'\xE9tudiants condamn\xE9s \xE0 rater leur dipl\xF4me
-    cette ann\xE9e."
-  - Julien Lepers quitte question pour un champion.
-  - "Des millions de d\xE9veloppeurs partout dans le monde contraints \xE0 travailler
-    sans stackOverflow."
-  - "[bruits \xE9tranges]."
-  - "Guerre civile \xE0 Marseille suite \xE0 l'annulation de la coupe de France de
-    Football."
+  - 'France falls under riots, due to the cancellation of more than 30 TV shows '
+  - "Vatican believes that a divine intervention might be responsible for the inaccessibilit\xE9
+    of online pornography "
+  - 'Intern accidentally triggers a false nuclear alert in Russia '
+  - 'Bangladesh finally on par with developed countries, as they no longer have access
+    to the internet '
+  - 'The price of mobile telephony rising in Ukraine '
+  - 'Millions of students condamned to fail their exams without Wikipedia '
+  - 'Millions of developpers all around the world forced to work without stackOverflow '
+  - 'Julien Lepers has quit Question pour un Champion '
+  - 'Adds temporarily absent from TV programs, for the utmost pleasure of the customers '
+  - 'Without any any answer to his threats, North Korea decided to launch a nuclear
+    attack '
+  - 'Civil War in Marseille after cancellation of the French football Cup '
+  - 'Drugs cartels benefit from the failure of intelligence services, expanding their
+    influence '
   GameIsOn: 0
   TutorialIsOn: 0
   PanelsManager: {fileID: 1005846543}
@@ -3499,17 +3494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "- Des millions de d\xE9veloppeurs partout dans le monde contraints \xE0
-    travailler sans stackOverflow.\n\n- Le Bangladesh enfin sur un pied d'\xE9galit\xE9
-    avec les pays d\xE9velopp\xE9s, ceux-ci n'ayant plus acc\xE8s \xE0 internet.\n\n-
-    Julien Lepers quitte question pour un champion.\n\n- Les cartels de la drogue
-    profitent de la d\xE9faillance des services de renseignements pour \xE9tendre
-    leur influence.\n\n- \xC9meutes en France suite \xE0 la coupure de plus 30 shows
-    t\xE9l\xE9vis\xE9s.\n\n- Explosion du prix de la t\xE9l\xE9phonie mobile en Ukraine.\n-
-    Un stagiaire d\xE9clenche par m\xE9garde une fausse alerte nucl\xE9aire en Russie.\n\n-
-    Le Bangladesh enfin sur un pied d'\xE9galit\xE9 avec les pays d\xE9velopp\xE9s,
-    ceux-ci n'ayant plus acc\xE8s \xE0 internet.\n\n- Un stagiaire d\xE9clenche par
-    m\xE9garde une fausse alerte nucl\xE9aire en Russie.\n"
+  m_Text: 
 --- !u!1 &809155776
 GameObject:
   m_ObjectHideFlags: 0
@@ -5041,7 +5026,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESULTATS DES ECHECS DE TRANSMISSION
+  m_Text: TRANSMISSION FAILED
 --- !u!222 &1158584463
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5670,6 +5655,10 @@ Prefab:
       propertyPath: Source
       value: 
       objectReference: {fileID: 1005846545}
+    - target: {fileID: 1350654030830246, guid: d66754b257c8f1e4585f61a12c7b46ed, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d66754b257c8f1e4585f61a12c7b46ed, type: 2}
   m_IsPrefabParent: 0
@@ -6922,7 +6911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TRANSMISSIONS REUSSIES
+  m_Text: SUCCESSFUL TRANSMISSION
 --- !u!222 &1583416406
 CanvasRenderer:
   m_ObjectHideFlags: 0
