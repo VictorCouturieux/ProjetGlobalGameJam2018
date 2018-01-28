@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Text MsgFailText;
 
     public List<GameObject> ListSatelite;
+	public List<GameObject> ListCercleSatelite;
 
     public string[] MsgFail;
 
@@ -28,35 +29,39 @@ public class GameManager : MonoBehaviour
         MsgFailText.text = "";
         _pushKey = 1;
 
-        _colorLight = new Color(255,255,255, 1);
-		_colorNoLight = new Color(255, 255, 255, 0.65f);
+        _colorLight = new Color( 1, 1, 1, 1);
+		_colorNoLight = new Color(0.45f, 0.76f, 1f, 0.4f);
     }
-	
+
 	// Update is called once per frame
 	void Update () {
         if (GameIsOn) {
             SelectSatellite();
         }
+
+		
 	}
 
     public void LaunchGame() {
         GameIsOn = true;
-        InvokeRepeating("SpawnRandom", 2.0f, 3.0f);
+
+        InvokeRepeating("SpawnRandom", 2.0f, 3f);
     }
 	
 	public void SelectSatellite()
 	{
-		ListSatelite[0].GetComponent<SpriteRenderer>().color = _colorNoLight;
-		ListSatelite[1].GetComponent<SpriteRenderer>().color = _colorNoLight;
-		ListSatelite[2].GetComponent<SpriteRenderer>().color = _colorNoLight;
-		ListSatelite[3].GetComponent<SpriteRenderer>().color = _colorNoLight;
+		
+		ListCercleSatelite[0].GetComponent<SpriteRenderer>().color = _colorNoLight;
+		ListCercleSatelite[1].GetComponent<SpriteRenderer>().color = _colorNoLight;
+		ListCercleSatelite[2].GetComponent<SpriteRenderer>().color = _colorNoLight;
+		ListCercleSatelite[3].GetComponent<SpriteRenderer>().color = _colorNoLight;
 		
 		if (Input.GetKey(KeyCode.Alpha1) || _pushKey == 1) 
 		{
 			_pushKey = 1;
 			ListSatelite[_pushKey-1].GetComponent<AnimSatelite>().RotationSpeed();
 			
-			ListSatelite[0].GetComponent<SpriteRenderer>().color = _colorLight;
+			ListCercleSatelite[0].GetComponent<SpriteRenderer>().color = _colorLight;
 			
 //			print(_pushKey);
 		}
@@ -65,7 +70,7 @@ public class GameManager : MonoBehaviour
 			_pushKey = 2;
 			ListSatelite[_pushKey-1].GetComponent<AnimSatelite>().RotationSpeed();
 			
-			ListSatelite[1].GetComponent<SpriteRenderer>().color = _colorLight;
+			ListCercleSatelite[1].GetComponent<SpriteRenderer>().color = _colorLight;
 			
 //			print(_pushKey);
 		}
@@ -74,7 +79,7 @@ public class GameManager : MonoBehaviour
 			_pushKey = 3;
 			ListSatelite[_pushKey-1].GetComponent<AnimSatelite>().RotationSpeed();
 			
-			ListSatelite[2].GetComponent<SpriteRenderer>().color = _colorLight;
+			ListCercleSatelite[2].GetComponent<SpriteRenderer>().color = _colorLight;
 			
 //			print(_pushKey);
 		}
@@ -83,7 +88,7 @@ public class GameManager : MonoBehaviour
 			_pushKey = 4;
 			ListSatelite[_pushKey-1].GetComponent<AnimSatelite>().RotationSpeed();
 			
-			ListSatelite[3].GetComponent<SpriteRenderer>().color = _colorLight;
+			ListCercleSatelite[3].GetComponent<SpriteRenderer>().color = _colorLight;
 			
 //			print(_pushKey);
 		}

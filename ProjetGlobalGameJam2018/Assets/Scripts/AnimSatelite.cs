@@ -9,7 +9,7 @@ public class AnimSatelite : MonoBehaviour
 	private const float Min = 10f;
 	private const float Max = 100f;
 	
-	private float _rotationSpeed = 50;
+	private float _rotationSpeed;
 	public int CoeffRotation;
 	
 	private Vector2 _centre;
@@ -35,7 +35,6 @@ public class AnimSatelite : MonoBehaviour
 	private void Update()
 	{
 
-		
 		transform.RotateAround(_centre, Vector3.back, CoeffRotation * _rotationSpeed * Time.deltaTime);
 		
 //		print(rotationSpeed);
