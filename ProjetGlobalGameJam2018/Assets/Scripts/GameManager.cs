@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
 	}
 	
 	public void SpawnRandom() {
-		Instantiate(Transmission, Vector3.zero, Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), Vector3.forward));
+		Instantiate(Transmission, new Vector3(0,0,0.1f), Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), Vector3.forward));
 	}
 
     public void addScore() {
