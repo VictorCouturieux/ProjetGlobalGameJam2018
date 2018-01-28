@@ -14,6 +14,9 @@ public class FlexibleUIData : ScriptableObject
     [Header("Panel Color")]
     public Color imageColor;
 
+    [Header("Title Color")]
+    public Color titleColor;
+
     [Header("Slider Colors")]
     public ColorBlock sliderColorBlock;
 

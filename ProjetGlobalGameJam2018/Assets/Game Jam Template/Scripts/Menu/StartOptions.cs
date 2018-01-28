@@ -118,9 +118,11 @@ public class StartOptions : MonoBehaviour {
 			//Wait until game has started, then play new music
 			Invoke ("PlayNewMusic", menuSettingsData.menuFadeTime);
 		}
-        
-        StartCoroutine(FadeCanvasGroupAlpha(1f,0f, menuCanvasGroup));
-	}
+
+        //StartCoroutine(FadeCanvasGroupAlpha(1f,0f, menuCanvasGroup));
+        HideDelayed();
+        Debug.Log("Coroutine done. Game started in same scene! Put your game starting stuff here.");
+    }
 
     public IEnumerator FadeCanvasGroupAlpha(float startAlpha, float endAlpha, CanvasGroup canvasGroupToFadeAlpha)
     {

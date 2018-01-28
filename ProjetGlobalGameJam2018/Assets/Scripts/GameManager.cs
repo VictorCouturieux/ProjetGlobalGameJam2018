@@ -10,8 +10,13 @@ public class GameManager : MonoBehaviour
     public int score;
     float tempo;
     public Text ScoreText;
-	
-	public List<GameObject> ListSatelite;
+    public Text MsgFailText;
+
+    public List<GameObject> ListSatelite;
+
+    public string[] MsgFail;
+
+    public bool GameIsOn;
 
 	private Color _colorLight;
 	private Color _colorNoLight;
@@ -20,19 +25,26 @@ public class GameManager : MonoBehaviour
 	
 	// Use this for initialization
 	void Start () {
-        InvokeRepeating("SpawnRandom", 2.0f, 3.0f);
-		
-		_colorLight = new Color(255,255,255, 1);
+        MsgFailText.text = "";
+        _pushKey = 1;
+
+        _colorLight = new Color(255,255,255, 1);
 		_colorNoLight = new Color(255, 255, 255, 0.65f);
     }
 	
 	// Update is called once per frame
 	void Update () {
-		SelectSatelite();
+        if (GameIsOn) {
+            SelectSatellite();
+        }
 	}
+
+    public void LaunchGame() {
+        GameIsOn = true;
+        InvokeRepeating("SpawnRandom", 2.0f, 3.0f);
+    }
 	
-	
-	public void SelectSatelite()
+	public void SelectSatellite()
 	{
 		ListSatelite[0].GetComponent<SpriteRenderer>().color = _colorNoLight;
 		ListSatelite[1].GetComponent<SpriteRenderer>().color = _colorNoLight;
@@ -85,8 +97,19 @@ public class GameManager : MonoBehaviour
     public void addScore() {
         score++;
         ScoreText.text = "SCORE " + score;
+        //TODO: Add CatchSound here
     }
-	
+
+    public void lossScore() {
+        score--;
+        ScoreText.text = "SCORE " + score;
+        addMsgFailed();
+        //TODO: Add ShowMsgSound Here (Loss)
+    }
+
+    public void addMsgFailed() {
+        MsgFailText.text = "- " + MsgFail[Random.Range(0, MsgFail.Length)] + "\n\n" + MsgFailText.text;
+    }
 }
 
 [CustomEditor(typeof(GameManager))]
@@ -97,6 +120,10 @@ public class GameManagerEditor : Editor {
         GameManager myScript = (GameManager)target;
         if (GUILayout.Button("Instanciate !")) {
             myScript.SpawnRandom();
+        }
+        GameManager mySecondScript = (GameManager)target;
+        if (GUILayout.Button("Bad Newzz !")) {
+            mySecondScript.addMsgFailed();
         }
     }
 }

@@ -7,13 +7,15 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject optionsPanel;							//Store a reference to the Game Object OptionsPanel 
 	public GameObject optionsTint;							//Store a reference to the Game Object OptionsTint 
 	public GameObject menuPanel;							//Store a reference to the Game Object MenuPanel 
-	public GameObject pausePanel;                           //Store a reference to the Game Object PausePanel 
+	public GameObject pausePanel;                           //Store a reference to the Game Object PausePanel
+    public GameObject gameUIPanel;
+    public GameObject helpPanel;
 
     private GameObject activePanel;                         
     private MenuObject activePanelMenuObject;
     private EventSystem eventSystem;
 
-
+    private GameManager GM_;
 
     private void SetSelection(GameObject panelToSetSelected)
     {
@@ -29,13 +31,14 @@ public class ShowPanels : MonoBehaviour {
     public void Start()
     {
         SetSelection(menuPanel);
+        GM_ = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
     //Call this function to activate and display the Options panel during the main menu
     public void ShowOptionsPanel()
 	{
 		optionsPanel.SetActive(true);
-		optionsTint.SetActive(true);
+		//optionsTint.SetActive(true);
         menuPanel.SetActive(false);
         SetSelection(optionsPanel);
 
@@ -44,30 +47,50 @@ public class ShowPanels : MonoBehaviour {
 	//Call this function to deactivate and hide the Options panel during the main menu
 	public void HideOptionsPanel()
 	{
+        gameUIPanel.SetActive(false);
         menuPanel.SetActive(true);
         optionsPanel.SetActive(false);
-		optionsTint.SetActive(false);
-	}
+        //optionsTint.SetActive(false);
+    }
 
 	//Call this function to activate and display the main menu panel during the main menu
 	public void ShowMenu()
 	{
-		menuPanel.SetActive (true);
+        print("Show Menu");
+        gameUIPanel.SetActive(false);
+        menuPanel.SetActive (true);
         SetSelection(menuPanel);
     }
 
 	//Call this function to deactivate and hide the main menu panel during the main menu
 	public void HideMenu()
 	{
-		menuPanel.SetActive (false);
+        print("Hide Menu");
+        menuPanel.SetActive (false);
+        gameUIPanel.SetActive(true);
+        GM_.LaunchGame();
+    }
 
-	}
-	
-	//Call this function to activate and display the Pause panel during game play
-	public void ShowPausePanel()
+    //Call this function to activate and display the Options panel during the main menu
+    public void ShowHelpPanel() {
+        helpPanel.SetActive(true);
+        menuPanel.SetActive(false);
+        //SetSelection(optionsPanel);
+    }
+
+    //Call this function to deactivate and hide the Options panel during the main menu
+    public void HideHelpPanel() {
+        helpPanel.SetActive(false);
+        menuPanel.SetActive(true);
+    }
+
+    //Call this function to activate and display the Pause panel during game play
+    public void ShowPausePanel()
 	{
-		pausePanel.SetActive (true);
-		optionsTint.SetActive(true);
+        print("Pause Panel");
+        gameUIPanel.SetActive(false);
+        pausePanel.SetActive (true);
+		//optionsTint.SetActive(true);
         SetSelection(pausePanel);
     }
 
@@ -75,7 +98,8 @@ public class ShowPanels : MonoBehaviour {
 	public void HidePausePanel()
 	{
 		pausePanel.SetActive (false);
-		optionsTint.SetActive(false);
+        gameUIPanel.SetActive(true);
+        //optionsTint.SetActive(false);
 
-	}
+    }
 }
