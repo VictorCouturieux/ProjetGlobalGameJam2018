@@ -6,8 +6,8 @@ using Random = UnityEngine.Random;
 
 public class AnimSatelite : MonoBehaviour
 {
-	private const float Min = 10f;
-	private const float Max = 100f;
+	private const float Min = 5f;
+	private const float Max = 90f;
 	
 	private float _rotationSpeed;
 	public int CoeffRotation;
@@ -16,7 +16,6 @@ public class AnimSatelite : MonoBehaviour
 
 	private void Start() {
 		_centre = new Vector3(0, 0, 1);
-		
 		
 		_rotationSpeed = Random.Range(Min, Max);
 
@@ -44,7 +43,7 @@ public class AnimSatelite : MonoBehaviour
 	{
 		if (Input.GetKey("up"))
 		{
-			_rotationSpeed+=2;
+			_rotationSpeed+=3;
 			if (_rotationSpeed > Max)
 			{
 				_rotationSpeed = Max;
@@ -52,7 +51,7 @@ public class AnimSatelite : MonoBehaviour
 		}
 		if (Input.GetKey("down"))
 		{
-			_rotationSpeed--;
+			_rotationSpeed-=3;
 			if (_rotationSpeed < Min)
 			{
 				_rotationSpeed = Min;

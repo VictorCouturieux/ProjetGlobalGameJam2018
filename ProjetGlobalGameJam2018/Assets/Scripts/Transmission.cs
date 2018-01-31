@@ -20,7 +20,7 @@ public class Transmission : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		transform.Translate(Vector3.right * Time.deltaTime);
+		transform.Translate(Vector3.right * 0.75f * Time.deltaTime);
 
 //		print("vecteur : " + Math.Sqrt( Math.Pow(transform.position.x , 2) + Math.Pow(transform.position.y , 2)) 
 //		      + "/ 8"

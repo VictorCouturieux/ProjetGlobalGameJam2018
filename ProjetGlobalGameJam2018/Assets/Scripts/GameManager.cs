@@ -8,7 +8,14 @@ public class GameManager : MonoBehaviour
 	public GameObject Transmission;
     public int score = 0;
     public int chaosLvl = 0;
-    float tempo;
+	
+    int _tempo =1;
+	private int _spown = 0;
+	private float _vitesseSpown = 1.5f;
+	
+	static float delayPeriod = 1.0f; //1 seconds
+	private float currentTime = 0;
+	
     public Text ScoreText;
     public Text MsgFailText;
     public Text ChaosLvlText;
@@ -35,6 +42,11 @@ public class GameManager : MonoBehaviour
 	
 	public AudioSource Source;
 
+	void Setup()
+	{
+		currentTime = Time.time + delayPeriod;
+	}
+	
     // Use this for initialization
     void Start () {
         MsgFailText.text = "";
@@ -45,19 +57,23 @@ public class GameManager : MonoBehaviour
 		_colorNoLight = new Color(0.45f, 0.76f, 1f, 0.4f);
     }
 
+	
+	
+	
 	// Update is called once per frame
 	void Update () {
         if (GameIsOn || TutorialIsOn) {
             SelectSatellite();
         }
-
-		
 	}
 
     public void LaunchGame() {
         GameIsOn = true;
+	    
+        InvokeRepeating("SpawnRandom", 2.0f, _vitesseSpown);
 
-        InvokeRepeating("SpawnRandom", 2.0f, 3f);
+//		    Invoke("SpawnRandom", 2.0f);
+	    
     }
 	
     public void ResetSatellite() {
@@ -112,7 +128,24 @@ public class GameManager : MonoBehaviour
 		
 	}
 	
-	public void SpawnRandom() {
+	public void SpawnRandom()
+	{
+		
+		print(Time.time);
+		_spown++;
+		if (_spown == _tempo)
+		{
+			_vitesseSpown -= 0.5f;
+
+			if (_vitesseSpown <= 0.25)
+			{
+				_vitesseSpown = 0.25f;
+			}
+			
+			_spown = 0;
+		}
+//		print(_vitesseSpown);
+		
 		Instantiate(Transmission, new Vector3(0,0,0.1f), Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), Vector3.forward));
 	}
 
@@ -120,7 +153,7 @@ public class GameManager : MonoBehaviour
         score++;
         ScoreText.text = "SCORE " + score;
 
-        chaosLvl--;
+        chaosLvl -= 5;
 
         if (chaosLvl < 0) {
             chaosLvl = 0;
