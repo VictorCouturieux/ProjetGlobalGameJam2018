@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
     public void LaunchGame() {
         GameIsOn = true;
 	    
-        InvokeRepeating("SpawnRandom", 2.0f, _vitesseSpown);
+        InvokeRepeating("SpawnRandom", 2.0f, 3.0f);
 
 //		    Invoke("SpawnRandom", 2.0f);
 	    
