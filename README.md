@@ -1,2 +1,2 @@
 # ProjetGlobalGameJam2018
-Jeu développé en janvier 2018, lors de la global game jam à Besançon.
+Game developed in January 2018, during the global game jam in Besançon.
